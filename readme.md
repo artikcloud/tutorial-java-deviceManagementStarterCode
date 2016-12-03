@@ -1,8 +1,8 @@
 # Device management Java starter code
 
-This sample will read and write to your custom device's Server Properties using the [ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java).
+This sample reads and writes to your device's Server Properties using the [ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java).
 
-Consult [ARTIK Cloud device management documentation](https://developer.artik.cloud/documentation/advanced-features/device-management.html) for the background.
+Consult [ARTIK Cloud device management](https://developer.artik.cloud/documentation/advanced-features/device-management.html) for the background.
 
 ### Prerequisite
 * Java >= 7
