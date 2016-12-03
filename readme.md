@@ -1,8 +1,8 @@
-# Java DEVICE MANAGEMENT Starter Code
+# Device management Java starter code
 
-tutorial-java-deviceManagementStarterCode
+This sample will read and write to your custom device's Server Properties using the [ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java).
 
-This sample will read and write to your custome device server properties using the [ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java).
+Consult [ARTIK Cloud device management documentation](https://developer.artik.cloud/documentation/advanced-features/device-management.html) for the background.
 
 ### Prerequisite
 * Java >= 7
@@ -10,21 +10,17 @@ This sample will read and write to your custome device server properties using t
 
 ### Setup / Installation:
 
-Before running code, first enable **device management** on your **device type**:  (https://developer.artik.cloud/documentation/advanced-features/device-management.html)
-
-Here is a quick outline of steps:
-
-1. git clone this project and [import the ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java)
-2. In developer portal: enable **device management properties** for a **device type** you own.
-3. Add server properties: in this example, we added 3 server properties called:  name, enabled, and random of type <String>, <Boolean>, <Integer> respectively.
-4. In MyServerProperty.java: add the same **server properties** as member variable names and matching data type from step 2.
+1. git clone this project and [import the ARTIK Cloud Java SDK](https://github.com/artikcloud/artikcloud-java).
+2. In the Developer Dashboard: click [Add Server Properties](https://developer.artik.cloud/documentation/advanced-features/device-management.html#create-server-properties) for a device type you own.
+3. Add 3 server properties called: name, enabled, and random of type <String>, <Boolean>, and <Integer> respectively.
+4. In MyServerProperty.java: add the same **Server Properties** as member variable names and matching data type from step 3.
 5. Go to My ARTIK Cloud and **connect device** (of your **device type**) and retrieve your Device ID and Device Token.
 6. Set your **device id** and **device token** in **Config.java** file.
-7. Run code.
+7. Build and run.
 
 ## Run the code
 
-Run the QuickStartServerProperties.java file.
+Run QuickStartServerProperties.java under sample.
 
 Here's a **sample output** after running the program which demonstrates reading and updating the custom device server properties made available setup/installation step: "name, enabled, and random".
 
@@ -112,7 +108,9 @@ devicesManagementApi.updateServerProperties(Config.DEVICE_ID,
 devicesManagementApi.getProperties(Config.DEVICE_ID, includeTimestamp);
 ```
 
+## More examples
 
+Peek into [tests](https://github.com/artikcloud/artikcloud-java/tree/master/src/test/java/cloud/artik/api) in ARTIK Cloud Java SDK for more device management SDK usage examples.
 
 ## Device Management Resources
 
